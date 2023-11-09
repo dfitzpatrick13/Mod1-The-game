@@ -50,9 +50,13 @@ scissors < rock
 // functions
  
 lose fucntion {
+    if powerlevel is higher equal to or less than will result in which person wins 
 
 }
 
+computer { 
+    when game is started then the computer will pick a random number 1 - 3 and that will determine which rock paper or scissors will be picked to win 
+}
 
 
 
