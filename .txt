@@ -1,0 +1,58 @@
+psudeo code/ plan for rock paper scissors game
+
+
+//global variables
+
+
+
+
+
+
+
+
+
+
+
+
+// objects 
+
+rock {
+    attackpower = 3
+}
+
+paper {
+    attackpower = 2
+}
+
+scissors {
+    attackpower = 1
+}
+
+
+
+
+
+
+
+
+
+
+// functions
+
+
+
+
+
+
+// event listeners 
+each button will corralate to the relative object and will be a on click event to change the object
+
+
+
+
+
+
+
+//html and css
+ 2 simple sqaure boxes 
+    3 buttons to choose  which one you goning to be 
