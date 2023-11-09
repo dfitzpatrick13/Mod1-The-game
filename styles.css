@@ -22,3 +22,8 @@ div {
     height: 350px;
     border: solid 1px black;
 }
+
+#buttons {
+    display: flex;
+    justify-content: flex-start;
+}
