@@ -29,8 +29,18 @@ scissors {
 }
 
 
+///// all the cases that could be win conditions//////
+rock < paper
+rock = rock
+rock > scissors
 
+paper = paper
+paper > rock
+paper < scissors
 
+scissors = scissors
+scissors > paper
+scissors < rock 
 
 
 
@@ -38,7 +48,10 @@ scissors {
 
 
 // functions
+ 
+lose fucntion {
 
+}
 
 
 
@@ -47,6 +60,7 @@ scissors {
 // event listeners 
 each button will corralate to the relative object and will be a on click event to change the object
 
+document.getElementByid("someid).addEventListener("click", button(rock,paper,scissors))
 
 
 
@@ -56,3 +70,22 @@ each button will corralate to the relative object and will be a on click event t
 //html and css
  2 simple sqaure boxes 
     3 buttons to choose  which one you goning to be 
+
+
+
+
+
+/// general idea of the game and code 
+1. Display a welcome message
+2. Get user input (rock, paper, or scissors)
+3. Generate a random choice for the computer (rock, paper, or scissors)
+4. Compare user's choice with computer's choice
+   - If they're the same, it's a tie
+   - If not, determine the winner based on the rules (rock beats scissors, scissors beats paper, paper beats rock)
+5. Display the choices made by the user and the computer
+6. Display the result (win, lose, or tie)
+7. Ask if the user wants to play again
+   - If yes, go back to step 2
+   - If no, display a goodbye message
+
+///
