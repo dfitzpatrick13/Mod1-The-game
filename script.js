@@ -12,15 +12,11 @@ function startGame() {
         ,computerChoice: computerChoice
     }
 }
+s
 
 
- 
 const playerChoice = gameChoices.playerChoice;
 const computerChoice = gameChoices.computerChoice;
-
-
-
-const gameChoices = startGame()
 
 //result is determening who wins the game based on a string
 
