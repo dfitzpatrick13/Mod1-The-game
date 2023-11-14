@@ -5,7 +5,7 @@ function startGame() {
     //player choices 
     const choices = ["rock","paper","scissors"]
     //  pc choicess
-    computerChoice = choices[Math.floor(Math.random() * 3 )]
+    let computerChoice = choices[Math.floor(Math.random() * 3 )]
     
     return {
         playerChoice: choices[0]
@@ -15,39 +15,77 @@ function startGame() {
 
 
 // makes player and computer choice excuteables 
-const playerChoice = gameChoices.playerChoice;
-const computerChoice = gameChoices.computerChoice;
+const playerChoice = startGame.playerChoice;
+const computerChoice = startGame.computerChoice;
 
 //result is determening who wins the game based on a string
+function updateResults(playerChoice,computerChoice){
 
-const result = " "
+  let result = " "
 
-// if statement that handles the result of a game 
+  // if statement that handles the result of a game 
+  
+  if (playerChoice === computerChoice) {
+      const result = 'It\'s a tie!';
+    } else if (
+      (playerChoice === 'rock' && computerChoice === 'scissors') ||
+      (playerChoice === 'paper' && computerChoice === 'rock') ||
+      (playerChoice === 'scissors' && computerChoice === 'paper')
+    ) {
+      result = 'You win!';
+    } else {
+      result = 'You lose!';
+    }
+}
 
-if (playerChoice === computerChoice) {
-    const result = 'It\'s a tie!';
-  } else if (
-    (playerChoice === 'rock' && computerChoice === 'scissors') ||
-    (playerChoice === 'paper' && computerChoice === 'rock') ||
-    (playerChoice === 'scissors' && computerChoice === 'paper')
-  ) {
-    result = 'You win!';
-  } else {
-    result = 'You lose!';
-  }
-  // inner html stuff that  may delete later
-//   document.getElementById('result').innerHTML = 'You chose ' + playerChoice +
-//         '. Computer chose ' + computerChoice + '. ' + result;
+
+  // // inner html sto display the result 
+  // document.getElementById('result').innerHTML = 'You chose ' + playerChoice +
+  //       '. Computer chose ' + computerChoice + '. ' + result;
 
     
-        //
-
+       
+        //event listener for rockbutton
         const rockButton = document.getElementById("Rock")
+        rockButton.addEventListener("click", function () {
+          const playerChoice = "rock"
+          console.log("rock");
+          const gameChoices = startGame(); 
+          // Generate a new computer choice
+         const computerChoice = gameChoices.computerChoice; 
+         updateResults(playerChoice, computerChoice);
+          
+        })
 
-      
-        
-  
-  
+            // Event listener  for paper button
+      const paperButton = document.getElementById("Paper");
+      paperButton.addEventListener("click", function () {
+          const playerChoice = "paper";
+          console.log("Paper");
+          const gameChoices = startGame();
+          const computerChoice = gameChoices.computerChoice;
+          updateResults(playerChoice, computerChoice);
+      });
 
-    
+      // Event listener for scissors button 
+      const scissorsButton = document.getElementById("Scissors");
+      scissorsButton.addEventListener("click", function () {
+          const playerChoice = "scissors";
+          console.log("Scissors");
+          const gameChoices = startGame();
+          const computerChoice = gameChoices.computerChoice;
+          updateResults(playerChoice, computerChoice);
+      });
+
+      // Event listener for random button 
+      const randomButton = document.getElementById("Random");
+      randomButton.addEventListener("click", function () {
+          const choices = ["rock", "paper", "scissors"];
+          const playerChoice = choices[Math.floor(Math.random() * 3)];
+          console.log("Random choice: " + playerChoice);
+          const gameChoices = startGame();
+          const computerChoice = gameChoices.computerChoice;
+          updateResults(playerChoice, computerChoice);
+      });
+          
     
