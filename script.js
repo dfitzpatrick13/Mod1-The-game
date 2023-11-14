@@ -12,9 +12,9 @@ function startGame() {
         ,computerChoice: computerChoice
     }
 }
-s
 
 
+// makes player and computer choice excuteables 
 const playerChoice = gameChoices.playerChoice;
 const computerChoice = gameChoices.computerChoice;
 
