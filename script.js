@@ -78,7 +78,7 @@ function updateResults(playerChoice,computerChoice){
       });
 
       // Event listener for random button 
-      const randomButton = document.getElementById("Random");
+      const randomButton = document.getElementById("random");
       randomButton.addEventListener("click", function () {
           const choices = ["rock", "paper", "scissors"];
           const playerChoice = choices[Math.floor(Math.random() * 3)];

@@ -26,4 +26,16 @@ div {
 #buttons {
     display: flex;
     justify-content: flex-start;
+    margin-left: 200px;
+    padding-top: 25px;
+}
+
+#scoreBoard {
+    display: flex;
+    justify-content: center
+    padding 
+}
+
+h2{ 
+    text-align: center;
 }
