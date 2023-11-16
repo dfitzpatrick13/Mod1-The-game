@@ -13,6 +13,9 @@ function startGame() {
     }
 }
 
+// setting the score board to 0 so i can ittrate up depending who wins 
+let playerScore = 0
+let computerScore = 0 
 
 // makes player and computer choice excuteables 
 const playerChoice = startGame.playerChoice;
