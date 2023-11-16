@@ -42,8 +42,8 @@ function updateResults(playerChoice,computerChoice){
      document.getElementById("player-score").textContent = "Player:" + playerChoice;
      document.getElementById("computer-score").textContent = "Computer:" + computerChoice;
      document.getElementById("player-score").textContent = "Player:" + playerChoice;
-     document.getElementById("player-score").textContent = "Player:" + playerChoice;
-     
+     document.getElementById("computer-score").textContent = "Computer:" + computerChoice;
+    
      console.log(result);
 
 }
