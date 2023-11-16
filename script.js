@@ -35,6 +35,14 @@ function updateResults(playerChoice,computerChoice){
     playerImage.src = 'sisscors.png';
   }
 
+  const computerImage = document.getElementById('computer-image');
+  if (computerChoice === 'rock') {
+    computerImage.src = 'rock.png';
+  } else if (computerChoice === 'paper') {
+    computerImage.src = 'paper.png';
+  } else if (computerChoice === 'scissors') {
+    computerChoice.src = 'sisscors.png';
+  }
 
   // if statement that handles the result of a game 
   if (playerChoice === computerChoice) {
