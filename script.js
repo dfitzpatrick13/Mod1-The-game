@@ -29,7 +29,7 @@ function updateResults(playerChoice,computerChoice){
   // if statement that handles the result of a game 
   
   if (playerChoice === computerChoice) {
-      const result = 'It\'s a tie!';
+       result = 'It\'s a tie!';
     } else if (
       (playerChoice === 'rock' && computerChoice === 'scissors') ||
       (playerChoice === 'paper' && computerChoice === 'rock') ||
