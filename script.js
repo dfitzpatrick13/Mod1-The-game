@@ -33,17 +33,20 @@ function updateResults(playerChoice,computerChoice){
       (playerChoice === 'scissors' && computerChoice === 'paper')
     ) {
       result = 'You win!';
+      playerScore++
     } else {
       result = 'You lose!';
+      computerScore++
     }
+     // display results and the score
+     document.getElementById("player-score").textContent = "Player:" + playerChoice;
+     document.getElementById("player-score").textContent = "Player:" + playerChoice;
+     document.getElementById("player-score").textContent = "Player:" + playerChoice;
+     document.getElementById("player-score").textContent = "Player:" + playerChoice;
+     
+     console.log(result);
+
 }
-
-
-  // // inner html sto display the result 
-  // document.getElementById('result').innerHTML = 'You chose ' + playerChoice +
-  //       '. Computer chose ' + computerChoice + '. ' + result;
-
-    
        
         //event listener for rockbutton
         const rockButton = document.getElementById("Rock")
@@ -88,4 +91,6 @@ function updateResults(playerChoice,computerChoice){
           updateResults(playerChoice, computerChoice);
       });
           
-    
+  
+     
+
