@@ -40,7 +40,7 @@ function updateResults(playerChoice,computerChoice){
     }
      // display results and the score
      document.getElementById("player-score").textContent = "Player:" + playerChoice;
-     document.getElementById("player-score").textContent = "Player:" + playerChoice;
+     document.getElementById("computer-score").textContent = "Computer:" + computerChoice;
      document.getElementById("player-score").textContent = "Player:" + playerChoice;
      document.getElementById("player-score").textContent = "Player:" + playerChoice;
      
