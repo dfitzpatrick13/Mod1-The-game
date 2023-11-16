@@ -34,14 +34,14 @@ function updateResults(playerChoice,computerChoice){
   } else if (playerChoice === 'scissors') {
     playerImage.src = 'sisscors.png';
   }
-
+//update images based on button press  for computer 
   const computerImage = document.getElementById('computer-image');
   if (computerChoice === 'rock') {
     computerImage.src = 'rock.png';
   } else if (computerChoice === 'paper') {
     computerImage.src = 'paper.png';
   } else if (computerChoice === 'scissors') {
-    computerChoice.src = 'sisscors.png';
+    computerImage.src = 'sisscors.png';
   }
 
   // if statement that handles the result of a game 
