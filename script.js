@@ -25,9 +25,18 @@ const computerChoice = startGame.computerChoice;
 function updateResults(playerChoice,computerChoice){
 
   let result = " "
+  //update images based on button press 
+  const playerImage = document.getElementById('player-image');
+  if (playerChoice === 'rock') {
+    playerImage.src = 'rock.png';
+  } else if (playerChoice === 'paper') {
+    playerImage.src = 'paper.png';
+  } else if (playerChoice === 'scissors') {
+    playerImage.src = 'sisscors.png';
+  }
+
 
   // if statement that handles the result of a game 
-  
   if (playerChoice === computerChoice) {
        result = 'It\'s a tie!';
     } else if (
