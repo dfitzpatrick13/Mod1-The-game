@@ -25,7 +25,7 @@ const computerChoice = startGame.computerChoice;
 function updateResults(playerChoice,computerChoice){
 
   let result = " "
-  //update images based on button press 
+  //update images based on button press for player
   const playerImage = document.getElementById('player-image');
   if (playerChoice === 'rock') {
     playerImage.src = 'rock.png';
@@ -59,11 +59,11 @@ function updateResults(playerChoice,computerChoice){
       computerScore++
     }
      // display results and the score
-     document.getElementById("player-score").textContent = "Player:" + playerChoice;
-     document.getElementById("computer-score").textContent = "Computer:" + computerChoice;
+    //  document.getElementById("player-score").textContent = "Player:" + playerChoice;
+    //  document.getElementById("computer-score").textContent = "Computer:" + computerChoice;
      document.getElementById('result').textContent = result;
-     document.getElementById("player-score").textContent = "Player:" + playerChoice;
-     document.getElementById("computer-score").textContent = "Computer:" + computerChoice;
+    //  document.getElementById("player-score").textContent = "Player:" + playerChoice;
+    //  document.getElementById("computer-score").textContent = "Computer:" + computerChoice;
     
      console.log(result);
 
